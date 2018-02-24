@@ -1,0 +1,41 @@
+body {
+    /* if you're curious, rgb stands for red, green, blue */
+    /* feel free to change the numbers */
+    background-color: rgb(218, 218, 218); 
+}
+
+#mainWrapper {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#addTodoWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#addTodoButton, #newTodo, #saveName {
+    border-radius: 0;
+}
+
+#newTodo {
+    display: none;
+}
+
+#saveName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loadNames {
+    margin: 10px;
+    display: inline;
+}
+
+.whiteText {
+    color: white;
+}

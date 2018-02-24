@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Databases</title>
+
+    <!-- This CSS library called Bootstrap gives me an quick way to create the interface -->
+    <link rel="stylesheet" href="css/external/bootstrap.min.css">
+
+    <!-- The formatting we give to our webpage -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="mainWrapper">
+        <h1>Todos: </h1>
+
+        <ol id="todos"></ol>
+
+        <div id="addTodoWrapper">
+            <div class="btn btn-dark" id="addTodoButton">Add Todo</div>
+            <input type="text" class="form-control" id="newTodo">
+        </div>
+
+        <hr>
+
+        <div id="loadNames">
+            <a class="btn btn-primary btn-sm" href="#">Load</a>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<!-- this links to Firebase, the database we're using -->
+<script src="js/external/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAVjSMQNbAzuQBWdY3YBFUn4Xz453r2FI4",
+    authDomain: "fire-database-lesson.firebaseapp.com",
+    databaseURL: "https://fire-database-lesson.firebaseio.com",
+    projectId: "fire-database-lesson",
+    storageBucket: "",
+    messagingSenderId: "339528843357"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<!-- this is where your code is -->
+<script src="js/lesson_with_delete.js"></script>
+
+<!-- this links to a javascript library called JQuery which we'll use for animations -->
+<script src="js/external/jquery-3.3.1.min.js"></script>
+
+<!-- Here's where we'll use JQuery to make the animations -->
+<script src="js/animations.js"></script>
+</html>
